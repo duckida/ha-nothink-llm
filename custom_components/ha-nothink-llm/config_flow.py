@@ -1,4 +1,4 @@
-"""Config flow for No<think> LLM integration."""
+"""Config flow for Nothink LLM integration."""
 
 from __future__ import annotations
 
@@ -96,7 +96,7 @@ class HaNothinkLlmConfigFlow(ConfigFlow, domain=DOMAIN):
             errors["base"] = "unknown"
         else:
             return self.async_create_entry(
-                title="No<think> LLM",
+                title="Nothink LLM",
                 data=user_input,
                 options=RECOMMENDED_OPTIONS,
             )
@@ -154,7 +154,7 @@ def ha_nothink_llm_config_option_schema(
     hass: HomeAssistant,
     options: dict[str, Any] | MappingProxyType[str, Any],
 ) -> VolDictType:
-    """Return a schema for No<think> LLM completion options."""
+    """Return a schema for Nothink LLM completion options."""
     hass_apis: list[SelectOptionDict] = [
         SelectOptionDict(
             label="No control",
