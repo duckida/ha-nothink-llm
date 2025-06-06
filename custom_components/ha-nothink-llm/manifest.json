@@ -1,6 +1,6 @@
 {
   "domain": "ha-nothink-llm",
-  "name": "No<think> LLM",
+  "name": "Nothink LLM",
   "after_dependencies": ["assist_pipeline", "intent"],
   "codeowners": ["@duckida"],
   "config_flow": true,
